@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg:#050505;
+    --color-primary: #131313;
+}
+
+body {
+    background:
+            linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+            var(--color-bg);
+    background-size: 160px 160px;
+}
+
+@media (max-width: 640px) {
+    body {
+        background:
+                linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+                var(--color-bg);
+        background-size: 80px 80px;
+    }
+}
